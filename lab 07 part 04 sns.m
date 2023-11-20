@@ -1,0 +1,24 @@
+x3=linspace(1,1,length(t3));
+x4=linspace(1,2,length(t4));
+x5=linspace(2,2,length(t5));
+x6=linspace(2,0,length(t6));
+x7=linspace(0,0,length(t7)); x=[x1 x2 x3 x4 x5 x6 x7];
+xhm=fliplr(x);
+xe=(x+xhm)/2;
+xo=(x-xhm)/2;
+subplot(411);plot(t,x);
+xlabel(’t’);ylabel(’x’);
+axis([-10 10 -2 4]);
+grid on;
+subplot(412);plot(t,xhm);
+xlabel(’t’);ylabel(’xhm’);
+axis([-10 10 -2 4]);
+grid on;
+subplot(413);plot(t,xe);
+xlabel(’t’);ylabel(’xe’);
+axis([-10 10 -2 4]);
+grid on;
+subplot(414);plot(t,xo);
+xlabel(’t’);ylabel(’xo’);
+axis([-10 10 -2 4]);
+grid on:
